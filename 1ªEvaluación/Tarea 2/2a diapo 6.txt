@@ -1,0 +1,14 @@
+PROGRAMA Párking
+
+INICIO
+DATOS
+	VARIABLES:
+		horaEntrada = numeroEntero
+		horaSalida = numeroEntero
+		horaPrecio = numeroDecimal
+	ALGORITMO
+		leer valores para horaEntrada y horaSalida
+		dar a horaPrecio el valor 1,2
+		mientras pase una hora{
+			sumar uno al valor horaPrecio
+		}mostrar por pantalla "paga (horaPrecio)€"

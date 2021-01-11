@@ -1,0 +1,30 @@
+PROGRAMA: Gastos
+
+INICIO
+DATOS:
+	VARIABLES:
+		kmConst = numeroEntero
+		km = numeroEntero
+		gastoGas = numeroDecimal
+		gastoDin = numeroDecimal
+		tiempoH = numeroDecimal
+		tiempoM = numeroDecimal
+		consumoGas = numeroDecimal
+		consumoDin = numeroDecimal
+		resultado = numeroDecimal
+		v = numeroDecimal
+	ALGORITMO:
+		leer valores para kmConst, tiempoH, tiempoM, gastoGas, gastoDin
+		dar valor 100 a la variable km
+		calcular el consumo de gas y de dinero por cada 100 kilómetros
+		mostrar ambos valores por pantalla
+		cambiar km a valor 1
+		calcular el consumo de gas y de dinero por cada kilómetro
+		mostrar ambos valores por pantalla
+		calculamos las horas con el tiempo que nos han facilitado
+		calculamos la velocidad en kilómetros por hora con los datos que tenemos
+		mostramos la velocidad por pantalla
+		calculamos el tiempo en segundos multiplicando las horas obtenidas antes por 3600
+		calculamos la velocidad pasando los kilómetros otorgados por el usuario a metros y dividiéndolos entre el resultado de la operación anterior
+		mostramos la velocidad en metros por segundo
+FIN	

@@ -1,0 +1,24 @@
+PROGRAMA: NOTA
+
+INICIO
+DATOS:
+	VARIABLES:
+		nota = numeroEntero
+	ALGORITMO:
+		leer la variable nota
+		comprobar que nota se encuentra entre 1 y 20 (incluidos)
+		si se cumple la condición{
+			si nota es menor que 10{
+				mostrar "tu nota corresponde a E" en pantalla
+			}si no, si nota se encuentra entre 10 y 12{
+				mostrar "tu nota corresponde a D" en pantalla
+			}si no, si nota se encuentra entre 13 y 15{
+				mostrar "tu nota corresponde a C" en pantalla
+			}si no, si nota se encuentra entre 16 y 18{
+				mostrar "tu nota corresponde a B" en pantalla
+			}si no, si nota se encuentra entre 19 y 20{
+				mostrar "tu nota corresponde a A" en pantalla
+		}si no{
+			mostrar el error
+			insertar otra variable
+		}

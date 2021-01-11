@@ -1,0 +1,44 @@
+El programa descompone en 5 decenas de millar, en 2 decenas de millar, en 1 decena de millar, en 5 unidades de millar y en 1 unidad de millar los números dados por teclado
+
+PROGRAMA: Descomposición
+
+INICIO
+DATOS:
+	VARIABLES:
+		BC = numeroEntero
+		BV = numeroEntero
+		BD = numeroEntero
+		BC2 = numeroEntero
+		BM = numeroEntero
+		N = numeroEntero
+	ALGORITMO:
+		leer N por teclado
+		dar el valor de N a C
+		si N>=50000{
+			sumar 1 a la variable BC
+			restar a C 50000
+		}si no, si n>=20000{
+			sumar 1 a la variable BV
+			restar a C 20000
+		}si no, si n>=10000{
+			sumar 1 a la variable BD
+			restar a C 10000
+		}si no, si n>=5000{
+			sumar 1 a la variable BC2
+			restar a C 5000
+		}si no, si n>=1000{
+			sumar 1 a la variable BM
+			restar a C 1000
+		}si no{
+			igualar lo que ha quedado de C en la variable resto
+		}mostar por pantalla el número original, las variables BC, BV, BD, BC2, BM y el resto
+FIN
+
+Crea un diagrama de flujo que, dado un número, lo descomponga en:
+	5 decenas de millar
+	2 decenas de millar
+	1 decena de millar
+	5 unidades de millar
+	1 unidad de millar
+	muestre lo que no puede ser operado con los datos anteriores
+	muestre el número original

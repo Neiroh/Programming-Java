@@ -1,0 +1,13 @@
+PROGRAMA: MillaMetro
+
+INICIO
+DATOS:
+	VARIABLES:
+		Resultado = NumeroEntero
+		Milla = NumeroEntero
+	ALGORITMO:
+		Leer Milla
+		Multiplicar Milla por 1852
+		Almacenar en Resultado
+		Mostrar Resultado por pantalla
+FIN
