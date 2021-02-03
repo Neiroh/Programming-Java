@@ -28,15 +28,26 @@ public class quitaDelante {
         System.out.println("Inserta cuantos numeros quieres quitar..");
         quita = sc.nextInt();
         
-        System.out.println("El número final es.. " +quitaPorDelante(num,quita));
+        System.out.print("El número final es.. ");
+        quitaPorDelante(num,quita);
     }
     
-    public static int quitaPorDelante(int num, int quita){
+    public static char[] quitaPorDelante(int num, int quita){
         String numero = String.valueOf(num);
         char[] numeroC = numero.toCharArray();
         
-        for(int i = 0; i < numeroC)
+        int longitud = numeroC.length;
+        int longFin = longitud - quita;
+        char[] termina = new char[longFin];
         
-        return num;
+        int n = 0;
+        
+        for(int i = quita; i < numeroC.length; i++){
+            //System.out.print(numeroC[i]);
+            termina[n] = numeroC[i];
+            n++;
+        }
+        System.out.println(termina);
+        return termina;
     }
 }
