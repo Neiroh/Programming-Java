@@ -13,7 +13,7 @@ import java.util.Scanner;
  */
 public class maximoArrayInt {
     
-    /*Este programa muestra mediante una función, el número mayor de un char*/
+    /*Este programa muestra mediante una función, el número mayor de un array*/
     
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
