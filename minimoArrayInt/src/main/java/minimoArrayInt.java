@@ -12,7 +12,7 @@ import java.util.Scanner;
 
 public class minimoArrayInt {
 
-    /*Este programa muestra mediante una función, el número menor de un char*/
+    /*Este programa muestra mediante una función, el número menor de un array*/
     
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
