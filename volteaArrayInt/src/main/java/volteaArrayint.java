@@ -1,4 +1,5 @@
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 /*
@@ -34,16 +35,18 @@ public class volteaArrayint {
         System.out.println("El array volteado es.. " + volteaArray(array));
     }
     
-    public static int[] volteaArray(int[] array){
+    public static String volteaArray(int[] array){
         
         int[] arrayVolteado = new int[array.length];
         
-        for(int i = 0; i < array.length; i++){
-            for(int j = array.length; j > 0; j--){
+        for(int i = 0; i < array.length - 1; i++){
+                //System.out.println(array[i]);
+            for(int j = array.length - 1; j > -1; j--){
                 arrayVolteado[i] = array[j];
+                //System.out.println(arrayVolteado[i]);
             }
         }
         
-        return arrayVolteado;
+        return Arrays.toString(arrayVolteado);
     }
 }
