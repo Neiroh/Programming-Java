@@ -38,13 +38,13 @@ public class volteaArrayint {
     public static String volteaArray(int[] array){
         
         int[] arrayVolteado = new int[array.length];
+        int j = array.length - 1;
         
-        for(int i = 0; i < array.length - 1; i++){
-                //System.out.println(array[i]);
-            for(int j = array.length - 1; j > -1; j--){
-                arrayVolteado[i] = array[j];
-                //System.out.println(arrayVolteado[i]);
-            }
+        for(int i = 0; i < array.length; i++){
+
+           arrayVolteado[i] = array[j];
+           j--;
+           
         }
         
         return Arrays.toString(arrayVolteado);
