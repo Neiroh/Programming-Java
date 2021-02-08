@@ -10,6 +10,8 @@
  */
 import java.util.Scanner;
 
+//Comentario inutil
+
 public class numDigitos {
     
     /*Este programa cuenta, mediante la funcion cuentaDigitos, el número de dígitos de un número entero*/
