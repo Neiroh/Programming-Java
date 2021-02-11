@@ -48,4 +48,110 @@ public class Alumno {
     public String toString(){
         return "Alumno{" + "Nombre: " + nombre + ", Apellidos: " + ap1 + ap2 + ", Edad: " + edad + ", Teléfono: " + tlf + ", Dni: " + dni + ", Número de Expediente: " + exp + ", Correo: " + correo + ", Nombre del Padre: " + nombrePadre + ", Nombre de la Madre: " + nombreMadre + ", Teléfono del Padre: " + tlfPadre + ", Teléfono de la Madre: " + tlfMadre + ", Direcciones: " +direcciones;
     }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getAp1() {
+        return ap1;
+    }
+
+    public void setAp1(String ap1) {
+        this.ap1 = ap1;
+    }
+
+    public String getAp2() {
+        return ap2;
+    }
+
+    public void setAp2(String ap2) {
+        this.ap2 = ap2;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public int getTlf() {
+        return tlf;
+    }
+
+    public void setTlf(int tlf) {
+        this.tlf = tlf;
+    }
+
+    public String getDni() {
+        return dni;
+    }
+
+    public void setDni(String dni) {
+        this.dni = dni;
+    }
+
+    public int getExp() {
+        return exp;
+    }
+
+    public void setExp(int exp) {
+        this.exp = exp;
+    }
+
+    public String getCorreo() {
+        return correo;
+    }
+
+    public void setCorreo(String correo) {
+        this.correo = correo;
+    }
+
+    public String getNombrePadre() {
+        return nombrePadre;
+    }
+
+    public void setNombrePadre(String nombrePadre) {
+        this.nombrePadre = nombrePadre;
+    }
+
+    public String getNombreMadre() {
+        return nombreMadre;
+    }
+
+    public void setNombreMadre(String nombreMadre) {
+        this.nombreMadre = nombreMadre;
+    }
+
+    public int getTlfPadre() {
+        return tlfPadre;
+    }
+
+    public void setTlfPadre(int tlfPadre) {
+        this.tlfPadre = tlfPadre;
+    }
+
+    public int getTlfMadre() {
+        return tlfMadre;
+    }
+
+    public void setTlfMadre(int tlfMadre) {
+        this.tlfMadre = tlfMadre;
+    }
+
+    public Direccion[] getDirecciones() {
+        return direcciones;
+    }
+
+    public void setDirecciones(Direccion[] direcciones) {
+        this.direcciones = direcciones;
+    }
+    
+    
 }
