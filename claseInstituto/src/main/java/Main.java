@@ -17,7 +17,7 @@ public class Main {
         // TODO code application logic here
         
         Direccion dir =  new Direccion("calle tegucigalpa", 2, 2, "3", 51002);
-        dir =  new Direccion("dsñlfjsf");
+        
     }
     
 }

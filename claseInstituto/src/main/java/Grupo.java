@@ -1,3 +1,6 @@
+
+import java.util.Arrays;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -17,14 +20,14 @@ public class Grupo {
     String turno;
     int curso;
     String tutor;
-    int matriculas;
-    String profesores;
+    Matricula[] matriculas;
+    Profesor[] profesores;
     
     public Grupo(){
         
     }
     
-    public Grupo(int id, String cod, String estudio, String turno, int curso, String tutor, int matriculas, String profesores){
+    public Grupo(int id, String cod, String estudio, String turno, int curso, String tutor, Matricula[] matriculas, Profesor[] profesores){
         this.id = id;
         this.cod = cod;
         this.estudio = estudio;
@@ -33,6 +36,11 @@ public class Grupo {
         this.tutor = tutor;
         this.matriculas = matriculas;
         this.profesores = profesores;
+    }
+    
+    @Override
+    public String toString(){
+        return "grupo{" + "Identificador: " + id + ", Código: " + cod + ", Estudio: " + estudio + ", Turno: " + turno + ", Curso: " + curso + ", Tutor: " + tutor + ", matriculas: " + Arrays.toString(matriculas) + ", Profesores: " + Arrays.toString(profesores);
     }
 
     public int getId() {
@@ -83,19 +91,19 @@ public class Grupo {
         this.tutor = tutor;
     }
 
-    public int getMatriculas() {
+    public Matricula[] getMatriculas() {
         return matriculas;
     }
 
-    public void setMatriculas(int matriculas) {
+    public void setMatriculas(Matricula[] matriculas) {
         this.matriculas = matriculas;
     }
 
-    public String getProfesores() {
+    public Profesor[] getProfesores() {
         return profesores;
     }
 
-    public void setProfesores(String profesores) {
+    public void setProfesores(Profesor[] profesores) {
         this.profesores = profesores;
     }
     
