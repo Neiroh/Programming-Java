@@ -30,9 +30,9 @@ public class Main {
         if(a.equals(b)){
             System.out.println("EL DNI SE REPITE");
         }else{
-            System.out.println(a.toString());
-            System.out.println(b.toString());
-            System.out.println();
+//            System.out.println(a.toString());
+//            System.out.println(b.toString());
+//            System.out.println();
         }
         
         Matricula mat1 = new Matricula(1, a, "DAW", "Diurno", true);
@@ -45,9 +45,9 @@ public class Main {
         if(mat1.equals(mat2)){
             System.out.println("LA MATRICULA ES LA MISMA");
         }else{
-            System.out.println(mat1.toString());
-            System.out.println(mat2.toString());
-            System.out.println();
+//            System.out.println(mat1.toString());
+//            System.out.println(mat2.toString());
+//            System.out.println();
         }
         
         Materia mod1 = new Materia(1, "Programación");
@@ -65,13 +65,13 @@ public class Main {
         materias[4] = mod5;
         materias[5] = mod6;
         
-        System.out.println(mod1.toString());
-        System.out.println(mod2.toString());
-        System.out.println(mod3.toString());
-        System.out.println(mod4.toString());
-        System.out.println(mod5.toString());
-        System.out.println(mod6.toString());
-        System.out.println();
+//        System.out.println(mod1.toString());
+//        System.out.println(mod2.toString());
+//        System.out.println(mod3.toString());
+//        System.out.println(mod4.toString());
+//        System.out.println(mod5.toString());
+//        System.out.println(mod6.toString());
+//        System.out.println();
         
         
         Departamento dep1 = new Departamento(1, "Informática");
@@ -80,15 +80,15 @@ public class Main {
         if(dep1.equals(dep2)){
             System.out.println("EL ID ES EL MISMO");
         }else{
-            System.out.println(dep1.toString());
-            System.out.println(dep2.toString());
-            System.out.println();
+//            System.out.println(dep1.toString());
+//            System.out.println(dep2.toString());
+//            System.out.println();
         }
         
         Estudio std1 = new Estudio(1, "Desarrollo de Aplicaciones Web", materias);
         Estudio std2 = new Estudio(2, "Desarrollo de Aplicaciones Multiplataforma", materias);
         
-        System.out.println(std1.toString());
+//        System.out.println(std1.toString());
         
         Profesor pr1 = new Profesor(1, "123456789A", "Javier", "De Reyes", "A", dep1);
         Profesor pr2 = new Profesor(2, "133456789A", "José Óscar", "González", "B", dep1);
@@ -105,16 +105,20 @@ public class Main {
         prof[4] = pr5;
         prof[5] = pr6;
         
-        System.out.println(pr1.toString());
-        System.out.println(pr2.toString());
-        System.out.println(pr3.toString());
-        System.out.println(pr4.toString());
-        System.out.println(pr5.toString());
-        System.out.println(pr6.toString());
-        System.out.println();
+//        System.out.println(pr1.toString());
+//        System.out.println(pr2.toString());
+//        System.out.println(pr3.toString());
+//        System.out.println(pr4.toString());
+//        System.out.println(pr5.toString());
+//        System.out.println(pr6.toString());
+//        System.out.println();
         
         Grupo gr1 = new Grupo(1, "DAW1", std1, "Diurno", 1, prof[1], mat, prof);
+        mostrar(gr1);
         
-        System.out.println(gr1.toString());
+    }
+    
+    public static void mostrar(Grupo gr){
+        System.out.println(gr.toString());
     }
 }
