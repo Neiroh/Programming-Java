@@ -12,25 +12,33 @@ public class Matricula {
 
     //Atributos
     int id;
-    String alumno;
+    Alumno alumno;
     String estudio;
     String turno;
     boolean estado;
-    
-    public Matricula(){
-        
+
+    public Matricula() {
+
     }
-    
-    public Matricula(int id, String alumno, String estudio, String turno, boolean estado){
+
+    public Matricula(int id, Alumno alumno, String estudio, String turno, boolean estado) {
         this.id = id;
         this.alumno = alumno;
         this.estudio = estudio;
         this.turno = turno;
         this.estado = estado;
     }
-    
+
+    public boolean equals(Matricula otra) {
+        if (this.id == otra.getId()) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     @Override
-    public String toString(){
+    public String toString() {
         return "matricula{" + "Identificador: " + id + ", Alumno: " + alumno + ", Estudio: " + estudio + ", Turno: " + turno + ", Estado: " + estado;
     }
 
@@ -42,11 +50,11 @@ public class Matricula {
         this.id = id;
     }
 
-    public String getAlumno() {
+    public Alumno getAlumno() {
         return alumno;
     }
 
-    public void setAlumno(String alumno) {
+    public void setAlumno(Alumno alumno) {
         this.alumno = alumno;
     }
 
@@ -73,6 +81,5 @@ public class Matricula {
     public void setEstado(boolean estado) {
         this.estado = estado;
     }
-    
-    
+
 }

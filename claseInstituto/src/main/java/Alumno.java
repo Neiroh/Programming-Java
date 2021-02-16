@@ -29,7 +29,7 @@ public class Alumno {
         
     }
     
-    public Alumno(String nombre, String ap1, String ap2, int edad, int tlf, String dni, int exp, String correo, String nombrePadre, String nombreMadre, int tlfPadre, int tlfMadre){
+    public Alumno(String nombre, String ap1, String ap2, int edad, int tlf, String dni, int exp, String correo, String nombrePadre, String nombreMadre, int tlfPadre, int tlfMadre, Direccion[] direcciones){
         this.nombre = nombre;
         this.ap1 = ap1;
         this.ap2 = ap2;
@@ -42,11 +42,23 @@ public class Alumno {
         this.nombreMadre = nombreMadre;
         this.tlfPadre = tlfPadre;
         this.tlfMadre = tlfMadre;
+        this.direcciones = direcciones;
     }
+    
+    public boolean equals(Alumno otro){
+        if(this.dni == otro.getDni()){
+            return true;
+        }else{
+            return false;
+        }
+        
+    }
+    
+    
     
     @Override
     public String toString(){
-        return "Alumno{" + "Nombre: " + nombre + ", Apellidos: " + ap1 + ap2 + ", Edad: " + edad + ", Teléfono: " + tlf + ", Dni: " + dni + ", Número de Expediente: " + exp + ", Correo: " + correo + ", Nombre del Padre: " + nombrePadre + ", Nombre de la Madre: " + nombreMadre + ", Teléfono del Padre: " + tlfPadre + ", Teléfono de la Madre: " + tlfMadre + ", Direcciones: " +direcciones;
+        return "Alumno{" + "Nombre: " + nombre + ", Apellidos: " + ap1 + " " + ap2 + ", Edad: " + edad + ", Teléfono: " + tlf + ", Dni: " + dni + ", Número de Expediente: " + exp + ", Correo: " + correo + ", Nombre del Padre: " + nombrePadre + ", Nombre de la Madre: " + nombreMadre + ", Teléfono del Padre: " + tlfPadre + ", Teléfono de la Madre: " + tlfMadre + ", Direcciones: " +direcciones;
     }
 
     public String getNombre() {
