@@ -54,8 +54,6 @@ public class Alumno {
         
     }
     
-    
-    
     @Override
     public String toString(){
         return "Alumno{" + "Nombre: " + nombre + ", Apellidos: " + ap1 + " " + ap2 + ", Edad: " + edad + ", Teléfono: " + tlf + ", Dni: " + dni + ", Número de Expediente: " + exp + ", Correo: " + correo + ", Nombre del Padre: " + nombrePadre + ", Nombre de la Madre: " + nombreMadre + ", Teléfono del Padre: " + tlfPadre + ", Teléfono de la Madre: " + tlfMadre + ", Direcciones: " +direcciones;
