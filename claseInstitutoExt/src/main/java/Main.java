@@ -15,14 +15,11 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Direccion dir1 = new Direccion("abc", 3, 4, "a", 51002);
-        Direccion dir2 = new Direccion("cba", 3, 4, "a", 51002);
-        Direccion dir3 = new Direccion("bac", 3, 4, "a", 51002);
 
         Direccion[] direcciones = new Direccion[3];
-        direcciones[0] = dir1;
-        direcciones[1] = dir2;
-        direcciones[2] = dir3;
+        direcciones[0] = new Direccion("abc", 3, 4, "a", 51002);
+        direcciones[1] = new Direccion("cba", 3, 4, "a", 51002);
+        direcciones[2] = new Direccion("bac", 3, 4, "a", 51002);
 
         Alumno a = new Alumno("RAUL", "FERNANDEZ", "ARCE", 19, 123456789, "123456789A", 9854, "ALUMNOA@GMAIL.COM", "JOSE", "LAURA", 123456789, 123456789, direcciones);
         Alumno b = new Alumno("ALVARO", "BAUTISTA", "ARCE", 25, 123456789, "133456789A", 9855, "ALUMNOB@GMAIL.COM", "JESUS", "LAURA", 123456789, 123456789, direcciones);
@@ -35,20 +32,13 @@ public class Main {
 //            System.out.println();
         }
 
-        Materia mod1 = new Materia(1, "Programación");
-        Materia mod2 = new Materia(2, "SI");
-        Materia mod3 = new Materia(3, "Entornos");
-        Materia mod4 = new Materia(4, "BBDD");
-        Materia mod5 = new Materia(5, "LMSGI");
-        Materia mod6 = new Materia(7, "FOL");
-
         Materia[] materias = new Materia[6];
-        materias[0] = mod1;
-        materias[1] = mod2;
-        materias[2] = mod3;
-        materias[3] = mod4;
-        materias[4] = mod5;
-        materias[5] = mod6;
+        materias[0] = new Materia(1, "Programación");
+        materias[1] = new Materia(2, "SI");
+        materias[2] = new Materia(3, "Entornos");
+        materias[3] = new Materia(4, "BBDD");
+        materias[4] = new Materia(5, "LMSGI");
+        materias[5] = new Materia(7, "FOL");
 
 //        System.out.println(mod1.toString());
 //        System.out.println(mod2.toString());
@@ -87,20 +77,13 @@ public class Main {
 //            System.out.println();
         }
 
-        Profesor pr1 = new Profesor(1, "123456789A", "Javier", "De Reyes", "A", dep1);
-        Profesor pr2 = new Profesor(2, "133456789A", "José Óscar", "González", "B", dep1);
-        Profesor pr3 = new Profesor(3, "143456789A", "Rosendo", "C", "D", dep1);
-        Profesor pr4 = new Profesor(4, "153456789A", "Javier", "Castillo", "E", dep1);
-        Profesor pr5 = new Profesor(5, "163456789A", "Javier", "Criado", "F", dep1);
-        Profesor pr6 = new Profesor(6, "173456789A", "Maite", "Lagares", "G", dep2);
-
         Profesor[] prof = new Profesor[6];
-        prof[0] = pr1;
-        prof[1] = pr2;
-        prof[2] = pr3;
-        prof[3] = pr4;
-        prof[4] = pr5;
-        prof[5] = pr6;
+        prof[0] = new Profesor(1, "123456789A", "Javier", "De Reyes", "A", dep1);
+        prof[1] = new Profesor(2, "133456789A", "José Óscar", "González", "B", dep1);
+        prof[2] = new Profesor(3, "143456789A", "Rosendo", "C", "D", dep1);
+        prof[3] = new Profesor(4, "153456789A", "Javier", "Castillo", "E", dep1);
+        prof[4] = new Profesor(5, "163456789A", "Javier", "Criado", "F", dep1);
+        prof[5] = new Profesor(6, "173456789A", "Maite", "Lagares", "G", dep2);
 
 //        System.out.println(pr1.toString());
 //        System.out.println(pr2.toString());
