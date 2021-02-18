@@ -33,7 +33,7 @@ public class Materia {
     
     @Override
     public String toString(){
-        return "Materia{" + "Identificador: " + id + ", Nombre: " + nombre;
+        return "Materia{" + "\nIdentificador: " + id + "\nNombre: " + nombre + "\n}";
     }
 
     public int getId() {

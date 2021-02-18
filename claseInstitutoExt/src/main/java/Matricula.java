@@ -39,7 +39,7 @@ public class Matricula {
 
     @Override
     public String toString() {
-        return "matricula{" + "Identificador: " + id + ", Alumno: " + alumno + ", Estudio: " + estudio + ", Turno: " + turno + ", Estado: " + estado;
+        return "matricula{" + "\nIdentificador: " + id + "\nAlumno: " + alumno + "\nEstudio: " + estudio + "\nTurno: " + turno + "\nEstado: " + estado + "\n}";
     }
 
     public int getId() {

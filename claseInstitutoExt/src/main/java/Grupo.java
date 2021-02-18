@@ -48,7 +48,7 @@ public class Grupo {
     
     @Override
     public String toString(){
-        return "grupo{" + "Identificador: " + id + ", Código: " + cod + ", Estudio: " + estudio + ", Turno: " + turno + ", Curso: " + curso + ", Tutor: " + tutor + ", matriculas: " + Arrays.toString(matriculas) + ", Profesores: " + Arrays.toString(profesores);
+        return "grupo{" + "\nIdentificador: " + id + "\nCódigo: " + cod + "\nEstudio: " + estudio + "\nTurno: " + turno + "\nCurso: " + curso + "\nTutor: " + tutor + "\nmatriculas: " + Arrays.toString(matriculas) + "\nProfesores: " + Arrays.toString(profesores) + "\n}";
     }
 
     public int getId() {

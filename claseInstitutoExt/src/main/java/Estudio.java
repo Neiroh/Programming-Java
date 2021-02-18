@@ -38,7 +38,7 @@ public class Estudio {
     
     @Override
     public String toString(){
-       return "Estudio{" + "Identificador: " + id + ", Nombre: " + nombre + ", Materias: " + Arrays.toString(materias); 
+       return "Estudio{" + "\nIdentificador: " + id + "\nNombre: " + nombre + "\nMaterias: " + Arrays.toString(materias) + "\n}"; 
     }
 
     public int getId() {

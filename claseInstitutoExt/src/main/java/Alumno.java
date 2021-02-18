@@ -58,7 +58,7 @@ public class Alumno {
     
     @Override
     public String toString(){
-        return "Alumno{" + "Nombre: " + nombre + ", Apellidos: " + ap1 + " " + ap2 + ", Edad: " + edad + ", Teléfono: " + tlf + ", Dni: " + dni + ", Número de Expediente: " + exp + ", Correo: " + correo + ", Nombre del Padre: " + nombrePadre + ", Nombre de la Madre: " + nombreMadre + ", Teléfono del Padre: " + tlfPadre + ", Teléfono de la Madre: " + tlfMadre + ", Direcciones: " + Arrays.toString(direcciones);
+        return "Alumno{" + "\nNombre: " + nombre + "\nApellidos: " + ap1 + " " + ap2 + "\nEdad: " + edad + "\nTeléfono: " + tlf + "\nDni: " + dni + "\nNúmero de Expediente: " + exp + "\nCorreo: " + correo + "\nNombre del Padre: " + nombrePadre + "\nNombre de la Madre: " + nombreMadre + "\nTeléfono del Padre: " + tlfPadre + "\nTeléfono de la Madre: " + tlfMadre + "\nDirecciones: " + Arrays.toString(direcciones) + "\n}";
     }
 
     public String getNombre() {

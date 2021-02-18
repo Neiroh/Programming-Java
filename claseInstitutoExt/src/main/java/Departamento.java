@@ -33,7 +33,7 @@ public class Departamento {
     
     @Override
     public String toString(){
-        return "Departamento{" + "Identificador: " + id + ", Nombre: " + nombre;
+        return "Departamento{" + "\nIdentificador: " + id + "\nNombre: " + nombre + "\n}";
     }
 
     public int getId() {

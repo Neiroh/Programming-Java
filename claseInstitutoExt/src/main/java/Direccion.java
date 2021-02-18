@@ -1,6 +1,6 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
+ * To change this license header\nchoose License Headers in Project Properties.
+ * To change this template file\nchoose Tools | Templates
  * and open the template in the editor.
  */
 
@@ -57,7 +57,7 @@ public class Direccion {
     
     @Override
     public String toString(){
-        return "direccion{" + "Nombre: " + nombre + ", Número: " + num + ", Planta : " + planta + ", Puerta: " + puerta + ", Código Postal: " +codPostal;
+        return "\ndireccion{" + "\nNombre: " + nombre + "\nNúmero: " + num + "\nPlanta : " + planta + "\nPuerta: " + puerta + "\nCódigo Postal: " +codPostal + "\n}" + "\n";
     }
 
     // GETTER y SETTER
