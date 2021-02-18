@@ -13,7 +13,7 @@ public class Matricula {
     //Atributos
     int id;
     Alumno alumno;
-    String estudio;
+    Estudio estudio;
     String turno;
     boolean estado;
 
@@ -21,7 +21,7 @@ public class Matricula {
 
     }
 
-    public Matricula(int id, Alumno alumno, String estudio, String turno, boolean estado) {
+    public Matricula(int id, Alumno alumno, Estudio estudio, String turno, boolean estado) {
         this.id = id;
         this.alumno = alumno;
         this.estudio = estudio;
@@ -58,11 +58,11 @@ public class Matricula {
         this.alumno = alumno;
     }
 
-    public String getEstudio() {
+    public Estudio getEstudio() {
         return estudio;
     }
 
-    public void setEstudio(String estudio) {
+    public void setEstudio(Estudio estudio) {
         this.estudio = estudio;
     }
 
