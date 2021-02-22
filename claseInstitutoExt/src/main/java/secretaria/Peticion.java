@@ -25,7 +25,7 @@ public class Peticion {
     
     }
     
-    public Peticion(int id, Date FechaPeticion, boolean EstadoPeticion, Profesor profesor){
+    public Peticion(int id, Date fechaPeticion, boolean estadoPeticion, Profesor profesor){
         this.id = id;
         this.fechaPeticion = fechaPeticion;
         this.estadoPeticion = estadoPeticion;
