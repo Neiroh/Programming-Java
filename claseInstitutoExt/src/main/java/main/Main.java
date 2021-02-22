@@ -1,4 +1,16 @@
-package gestionGrupos;
+package main;
+
+
+import gestionGrupos.Alumno;
+import gestionGrupos.Departamento;
+import gestionGrupos.Direccion;
+import gestionGrupos.Estudio;
+import gestionGrupos.Grupo;
+import gestionGrupos.Materia;
+import gestionGrupos.Matricula;
+import gestionGrupos.Profesor;
+
+
 
 /*
  * To change this license header, choose License Headers in Project Properties.
