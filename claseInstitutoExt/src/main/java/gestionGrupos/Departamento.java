@@ -1,3 +1,5 @@
+package gestionGrupos;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -8,23 +10,23 @@
  *
  * @author Raul
  */
-public class Materia {
+public class Departamento {
     
     //Atributos
     int id;
     String nombre;
     
-    public Materia(){
+    public Departamento(){
         
     }
-    
-    public Materia(int id, String nombre){
+     
+    public Departamento(int id, String nombre){
         this.id = id;
-        this.nombre = nombre;
+        this. nombre = nombre;
     }
     
-    public boolean equals(Materia other){
-        if(this.id == other.getId()){
+    public boolean equals(Departamento otro){
+        if(this.id == otro.getId()){
             return true;
         }else{
             return false;
@@ -33,7 +35,7 @@ public class Materia {
     
     @Override
     public String toString(){
-        return "Materia{" + "\nIdentificador: " + id + "\nNombre: " + nombre + "\n}";
+        return "Departamento{" + "\nIdentificador: " + id + "\nNombre: " + nombre + "\n}";
     }
 
     public int getId() {

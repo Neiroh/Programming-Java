@@ -1,5 +1,4 @@
-
-import java.util.Arrays;
+package gestionGrupos;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -11,25 +10,23 @@ import java.util.Arrays;
  *
  * @author Raul
  */
-public class Estudio {
+public class Materia {
     
     //Atributos
     int id;
     String nombre;
-    Materia[] materias;
     
-    public Estudio(){
+    public Materia(){
         
     }
     
-    public Estudio(int id, String nombre, Materia[] materias){
+    public Materia(int id, String nombre){
         this.id = id;
         this.nombre = nombre;
-        this.materias = materias;
     }
     
-    public boolean equals(Estudio otro){
-        if(this.id == otro.getId()){
+    public boolean equals(Materia other){
+        if(this.id == other.getId()){
             return true;
         }else{
             return false;
@@ -38,7 +35,7 @@ public class Estudio {
     
     @Override
     public String toString(){
-       return "Estudio{" + "\nIdentificador: " + id + "\nNombre: " + nombre + "\nMaterias: " + Arrays.toString(materias) + "\n}"; 
+        return "Materia{" + "\nIdentificador: " + id + "\nNombre: " + nombre + "\n}";
     }
 
     public int getId() {
@@ -56,13 +53,6 @@ public class Estudio {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-
-    public Materia[] getMaterias() {
-        return materias;
-    }
-
-    public void setMaterias(Materia[] materias) {
-        this.materias = materias;
-    }
+    
     
 }
