@@ -174,6 +174,8 @@ public class Main {
             System.out.println(pe1.toString());
             System.out.println(pe2.toString());
             System.out.println();
+            System.out.println("");
+            System.out.println("");
         }
         
         Date date3 = new Date(2021, 02, 10);
@@ -212,6 +214,8 @@ public class Main {
         }else{
             System.out.println(pr1.toString());
             System.out.println(pr2.toString());
+            System.out.println();
+            System.out.println();
             System.out.println();
         }
         
