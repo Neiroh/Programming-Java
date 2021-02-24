@@ -3,6 +3,8 @@ package main;
 
 
 
+import biblioteca.Libro;
+import biblioteca.Prestamo;
 import gestionGrupos.Alumno;
 import gestionGrupos.Departamento;
 import gestionGrupos.Direccion;
@@ -12,6 +14,8 @@ import gestionGrupos.Materia;
 import gestionGrupos.Matricula;
 import gestionGrupos.Profesor;
 import java.util.Date;
+import secretaria.Peticion;
+import secretaria.SolicitudBeca;
 
 
 
@@ -110,11 +114,40 @@ public class Main {
 //        System.out.println(pr6.toString());
 //        System.out.println();
         Grupo gr1 = new Grupo(1, "DAW1", std1, "Diurno", 1, prof[1], mat, prof);
-        mostrar(gr1);
-
+        
+        Date date1 = new Date();
+        Date date2 = new Date(2020, 12, 13);
+        
+        Peticion pe1 = new Peticion(1, date1, true, prof[3]);
+        Peticion pe2 = new Peticion(2, date2, false, prof[5]);
+        
+        System.out.println(pe1.toString());
+        System.out.println(pe2.toString());
+        System.out.println();
+        
+        Date date3 = new Date(2021, 02, 10);
+        Date date4 = new Date(2021, 01, 27);
+        Date date5 = new Date(2021, 01, 23);
+        Date date6 = new Date(2021, 02, 04);
+        
+        Libro lb1 = new Libro(123456, "El Temor de un Hombre Sabio", "Patrick Rothfus", 972, "DeBolsillo", 6);
+        Libro lb2 = new Libro(213456, "El Sonido del Silencio", "Patrick Rothfus", 467, "DeBolsillo", 3);
+        
+        Prestamo pr1 = new Prestamo(lb1, a, date4, date3);
+        Prestamo pr2 = new Prestamo(lb2, b, date5, date6);
+        
+        System.out.println(pr1.toString());
+        System.out.println(pr2.toString());
+        System.out.println();
+        
+        Date fnac1 = new Date(2001, 07, 13);
+        Date fnac2 = new Date(1995, 07, 20);
+        
+        SolicitudBeca sb1 = new SolicitudBeca(1, "Raúl", "Fernández", "Arce", "ES1234567890", "Solito", fnac1, true);
+        SolicitudBeca sb2 = new SolicitudBeca(2, "Álvaro", "Bautista", "Arce", "ES1234567899", "Casao", fnac2, false);
+        
+        System.out.println(sb1.toString());
+        System.out.println(sb2.toString());
     }
 
-    public static void mostrar(Grupo gr) {
-        System.out.println(gr.toString());
-    }
 }
