@@ -18,17 +18,15 @@ public class Cuadrado extends Forma {
     }
     
     public Cuadrado(double lado){
-        super("", 3);
+        super("Cuadrado", 3);
         this.lado = lado;
     }
 
     @Override
     public String toString() {
-        return "Cuadrado{" + "lado=" + lado + '}';
+        return "Cuadrado{\n" + "lado=" + lado + "\nNombre: " + getNombre() + "\n}\n\n";
     }
     
-    
-
     public double getLado() {
         return lado;
     }
@@ -37,9 +35,8 @@ public class Cuadrado extends Forma {
         this.lado = lado;
     }
     
+    @Override
     public void calcularArea(){
         System.out.println("El area del cuadrado es .. " + lado*lado);
     }
-    
-    
 }

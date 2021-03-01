@@ -11,16 +11,15 @@ package geometria;
  */
 public class Forma {
     
-    public String nombre;
-    public int a;
+    protected String nombre;
+    protected int a;
     
     public Forma(){
         
     }
     
     public Forma(String nombre, int a){
-        //this.nombre = nombre;
-        this.nombre = "forma .. ";
+        this.nombre = nombre;
         this.a = a;
     }
     
@@ -32,7 +31,6 @@ public class Forma {
     public String toString() {
         return "Forma{" + "nombre=" + nombre + '}';
     }
-    
 
     public String getNombre() {
         return nombre;

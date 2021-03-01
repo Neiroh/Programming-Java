@@ -8,6 +8,7 @@ package herencia;
 import geometria.Circulo;
 import geometria.Cuadrado;
 import geometria.Forma;
+import geometria.Triangulo;
 
 /**
  *
@@ -31,6 +32,12 @@ public class Herencia {
         
         cir.calcularArea();
         
+        Triangulo t = new Triangulo(3);
+        
+        System.out.println(f.toString());
+        System.out.println(c.toString());
+        System.out.println(cir.toString());
+        System.out.println(t.toString());
     }
     
 }

@@ -9,16 +9,23 @@ package geometria;
  *
  * @author profesor
  */
-public class Circulo {
+public class Circulo extends Forma{
     
-    double radio;
+    private double radio;
     
     public Circulo(){
         
     }
     
     public Circulo(double radio){
+        super("Círculo", 3);
         this.radio = radio;
+    }
+
+    @Override
+    public String toString() {
+        
+        return "Circulo{\n" + "radio=" + radio + "\nNombre: " + getNombre() + "\n}\n\n";
     }
 
     public double getRadio() {
@@ -29,6 +36,7 @@ public class Circulo {
         this.radio = radio;
     }
     
+    @Override
     public void calcularArea(){
         System.out.println("El area del circulo es.. " + Math.PI*Math.pow(radio, 2));
     }
