@@ -31,7 +31,7 @@ public class Main {
             System.out.println("Elige el tipo de figura: \n1.- Círculo\n2.- Cuadrado\n3.- Triángulo");
             String figuraElegida = sc.next();
             
-            if(figuraElegida.equalsIgnoreCase("Circulo")){
+            if(figuraElegida.equalsIgnoreCase("Circulo") || figuraElegida.equalsIgnoreCase("1")){
                 
                 System.out.println("Ingresa la medida del radio..");
                 final double radio = sc.nextDouble();
@@ -40,7 +40,7 @@ public class Main {
                 
                 fig[i] = new Circulo(radio);
                 
-            }else if(figuraElegida.equalsIgnoreCase("cuadrado")){
+            }else if(figuraElegida.equalsIgnoreCase("cuadrado") || figuraElegida.equalsIgnoreCase("2")){
                 
                 System.out.println("Ingresa la medida del lado 1..");
                 final double lado1 = sc.nextDouble();
@@ -52,7 +52,7 @@ public class Main {
                 
                 fig[i] = new Cuadrado(lado1, lado2);
                 
-            }else if(figuraElegida.equalsIgnoreCase("triangulo")){
+            }else if(figuraElegida.equalsIgnoreCase("triangulo") || figuraElegida.equalsIgnoreCase("3")){
                 
                 System.out.println("Ingresa la medida de la base..");
                 final double base = sc.nextDouble();
