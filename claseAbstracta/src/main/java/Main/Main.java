@@ -73,10 +73,8 @@ public class Main {
         //fig[0] = new Circulo(2); //12,56
         //fig[1] = new Cuadrado(2, 2); //4
         //fig[2] = new Triangulo(2, 2); //2
-        
-        double suma = 12.56+4+2;
-        
-        System.out.println("El resultado es.. " + calcularArea(fig) + " = " + suma);
+                
+        System.out.println("El resultado es.. " + calcularArea(fig));
     }
     
     public static double calcularArea(Figura[] fig){
