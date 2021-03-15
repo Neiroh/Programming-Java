@@ -26,7 +26,7 @@ public abstract class Figura3D extends Figura{
         this.grosorBorde = grosorBorde;
     }
     
-    public abstract int calcularVolumen();
+//    public abstract int calcularVolumen();
     
     public boolean equals(Figura3D other){
         if(this.color == other.color && this.nombre.equals(other.nombre) && this.grosorBorde == other.grosorBorde){

@@ -19,14 +19,15 @@ public class Esfera extends Figura3D{
         
     }
     
-    public Esfera(String nombre, int grosorBorde, int color){
+    public Esfera(String nombre, int grosorBorde, int color, int radio){
         this.nombre = nombre;
         this.grosorBorde = grosorBorde;
         this.color = color;
+        this.radio = radio;
     }
 
     public boolean equals(Esfera other){
-        if(this.nombre.equals(other.nombre) && this.grosorBorde == other.grosorBorde && this.color == other.color && this.radio == other.radio){
+        if(nombre.equals(other.nombre) && grosorBorde == other.grosorBorde && color == other.color && radio == other.radio){
             return true;
         }else{
             return false;
@@ -37,4 +38,54 @@ public class Esfera extends Figura3D{
     public String toString(){
         return "Esfera{\n" + this + "Radio: " + radio + "\n}";
     }
+    
+    @Override
+    public void dibujar(){
+        
+    }
+    
+    public int calcularVolumen(){
+        final int volumen = (int) ((int) (4/3)*Math.PI*radio*radio*radio);
+        return volumen;
+    }
+
+    public int getRadio() {
+        return radio;
+    }
+
+    public void setRadio(int radio) {
+        this.radio = radio;
+    }
+
+    @Override
+    public String getNombre() {
+        return nombre;
+    }
+
+    @Override
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    @Override
+    public int getGrosorBorde() {
+        return grosorBorde;
+    }
+
+    @Override
+    public void setGrosorBorde(int grosorBorde) {
+        this.grosorBorde = grosorBorde;
+    }
+
+    @Override
+    public int getColor() {
+        return color;
+    }
+
+    @Override
+    public void setColor(int color) {
+        this.color = color;
+    }
+    
+    
 }

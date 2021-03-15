@@ -39,6 +39,6 @@ public abstract class Figura2D extends Figura{
         return "Figura 2D{\n" + this + "\n}";
     }
     
-    public abstract int calcularArea();
-    public abstract int calcularPerimetro();
+//    public abstract int calcularArea();
+//    public abstract int calcularPerimetro();
 }
